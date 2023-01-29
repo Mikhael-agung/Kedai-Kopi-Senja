@@ -47,11 +47,16 @@ body {
   color: var(--primary);
 }
 
+.navbar .navbar-nav {
+  margin-right: 10px;
+}
+
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
   font-size: 1.2rem;
   margin: 0 1rem;
+  
 }
 
 .navbar .navbar-nav a:hover {
@@ -71,6 +76,10 @@ body {
   transform: scaleX(0.5);
 }
 
+.navbar .navbar-extra a{
+  color: yellow;
+  margin: 0 0.5rem;
+}
 .navbar .navbar-extra a:hover {
   color: var(--primary);
   
@@ -79,6 +88,62 @@ body {
 #hamburger-menu {
   display: none;
 }
+
+/* Input Item */
+.search {
+  position: absolute;
+  top: 45px;
+  right: 5rem;
+  margin-right: 15px;
+  transform: translate(-50%, -50%);
+  background: black;
+  color: white;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.search:hover > .search-txt {
+  width: 180px;
+  padding: 0 10px;
+  color: wheat;
+}
+
+.search:hover > .search-btn {
+  background: white;
+}
+
+.search-btn {
+ color: red;
+ float: right;
+ margin-right: 5px;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.search-txt{
+  line-height: -50px;
+  display: inline-block;
+  background: none;
+  padding: 0;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 15px;
+  transition: ease-in 0.4s;
+  width: 118px;
+  
+}
+
+.icon {
+  margin: 2px 3px;
+}
+
 
 
 /* Hero Section */
