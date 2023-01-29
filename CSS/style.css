@@ -56,7 +56,6 @@ body {
   display: inline-block;
   font-size: 1.2rem;
   margin: 0 1rem;
-  
 }
 
 .navbar .navbar-nav a:hover {
@@ -76,13 +75,12 @@ body {
   transform: scaleX(0.5);
 }
 
-.navbar .navbar-extra a{
+.navbar .navbar-extra a {
   color: yellow;
   margin: 0 0.5rem;
 }
 .navbar .navbar-extra a:hover {
   color: var(--primary);
-  
 }
 
 #hamburger-menu {
@@ -115,18 +113,19 @@ body {
 }
 
 .search-btn {
- color: red;
- float: right;
- margin-right: 5px;
- width: 30px;
- height: 30px;
- border-radius: 50%;
- display: flex;
- justify-content: center;
- align-items: center;
+  color: red;
+  float: right;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
 }
 
-.search-txt{
+.search-txt {
   line-height: -50px;
   display: inline-block;
   background: none;
@@ -135,16 +134,13 @@ body {
   border: none;
   color: white;
   font-size: 15px;
-  transition: ease-in 0.4s;
+  transition: ease-in-out 0.4s;
   width: 118px;
-  
 }
 
 .icon {
   margin: 2px 3px;
 }
-
-
 
 /* Hero Section */
 
@@ -165,7 +161,7 @@ body {
   width: 100%;
   height: 30%;
   bottom: 0;
-  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0)50%);
+  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%);
 }
 
 .hero .content {
@@ -173,7 +169,7 @@ body {
   max-width: 60rem;
 }
 
-.hero .content h1{
+.hero .content h1 {
   font-size: 5rem;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
@@ -207,7 +203,7 @@ body {
 /* About Section */
 .about {
   padding: 1.4rem 7%;
-} 
+}
 
 /* media Queries */
 
@@ -219,7 +215,6 @@ body {
 }
 /* Tablet */
 @media (max-width: 758px) {
-  
   html {
     font-size: 62.5%;
   }
@@ -241,7 +236,7 @@ body {
   .navbar .navbar-nav.active {
     right: 0;
   }
-  
+
   .navbar .navbar-nav a {
     color: var(--bg);
     display: block;
@@ -262,7 +257,6 @@ body {
 /* Mobile Phone */
 
 @media (max-width: 450px) {
-  
   html {
     font-size: 55%;
   }
