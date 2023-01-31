@@ -147,7 +147,7 @@ body {
   padding: 1rem 7% 1.4rem;
 }
 
-.about h2 {
+.about h2 .menu h2 {
   margin-bottom: 3rem;
   text-align: center;
   font-size: 2.5rem;
@@ -198,7 +198,7 @@ body {
   }
 }
 /* Tablet */
-@media (max-width: 758px) {
+@media (max-width: 886px) {
   html {
     font-size: 62.5%;
   }
@@ -236,6 +236,23 @@ body {
   .navbar .navbar-nav a:hover:after {
     transform: scaleX(0.2);
   }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    object-fit: cover;
+    height: 24rem;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
 }
 
 /* Mobile Phone */
@@ -243,5 +260,11 @@ body {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+    
+  }
+  .about .row .content {
+    margin-top: 1.9rem;
   }
 }
+  
+
