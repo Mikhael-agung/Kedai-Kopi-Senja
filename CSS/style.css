@@ -20,14 +20,14 @@ body {
   min-height: 2000px;
 }
 
-/* Navbar */
+/* !Navbar */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgba(1, 1, 1, 0.8);
+  background-color: rgba(1, 1, 1, 0.9);
   border-bottom: 1px solid #523127;
   position: fixed;
   top: 0;
@@ -45,6 +45,10 @@ body {
 
 .navbar .navbar-logo span {
   color: var(--primary);
+}
+
+.navbar .navbar-nav {
+  margin-right: 10px;
 }
 
 .navbar .navbar-nav a {
@@ -71,17 +75,74 @@ body {
   transform: scaleX(0.5);
 }
 
+.navbar .navbar-extra a {
+  color: yellow;
+  margin: 0 0.5rem;
+}
 .navbar .navbar-extra a:hover {
   color: var(--primary);
-  
 }
 
 #hamburger-menu {
   display: none;
 }
 
+/* *Input Item */
+.search {
+  position: absolute;
+  top: 45px;
+  right: 5rem;
+  margin-right: 15px;
+  transform: translate(-50%, -50%);
+  background: black;
+  color: white;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px;
+  border: 1px solid white;
+}
 
-/* Hero Section */
+.search:hover > .search-txt {
+  width: 180px;
+  padding: 0 10px;
+  color: wheat;
+}
+
+.search:hover > .search-btn {
+  background: white;
+}
+
+.search-btn {
+  color: red;
+  float: right;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.search-txt {
+  line-height: -50px;
+  display: inline-block;
+  background: none;
+  padding: 0;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 15px;
+  transition: ease-in-out 0.4s;
+  width: 118px;
+}
+
+.icon {
+  margin: 2px 3px;
+}
+
+/*  *Hero Section */
 
 .hero {
   min-height: 100vh;
@@ -100,7 +161,7 @@ body {
   width: 100%;
   height: 30%;
   bottom: 0;
-  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0)50%);
+  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%);
 }
 
 .hero .content {
@@ -108,7 +169,7 @@ body {
   max-width: 60rem;
 }
 
-.hero .content h1{
+.hero .content h1 {
   font-size: 5rem;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
@@ -139,24 +200,75 @@ body {
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
-/* About Section */
+/** About Section */
 .about {
-  padding: 1.4rem 7%;
-} 
+  padding: 7rem 7% 1.4rem;
+}
 
-/* media Queries */
+.about h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
 
-/* Laptop */
+.about h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img{
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem; 
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem ;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
+
+}
+
+/* ? Media Queries */
+
+/* !Laptop */
 @media (max-width: 1366px) {
   html {
     font-size: 60%;
   }
+
+  .search {
+    top: 26px;
+    right: 3rem;
+    
+  }
 }
-/* Tablet */
+
+
+/* !Tablet */
 @media (max-width: 758px) {
-  
   html {
     font-size: 62.5%;
+  }
+
+  .search {
+    display: none;
   }
 
   #hamburger-menu {
@@ -176,13 +288,17 @@ body {
   .navbar .navbar-nav.active {
     right: 0;
   }
-  
+
   .navbar .navbar-nav a {
     color: var(--bg);
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
+  }
+
+  .hero::after {
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 500%, rgba(255, 255, 255, 0) 100%);
   }
 
   .navbar .navbar-nav a::after {
@@ -192,13 +308,26 @@ body {
   .navbar .navbar-nav a:hover:after {
     transform: scaleX(0.2);
   }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    object-fit: cover;
+    height: 24rem;
+    object-position: center;
+  }
 }
 
-/* Mobile Phone */
+/* !Mobile Phone */
 
 @media (max-width: 450px) {
-  
   html {
     font-size: 55%;
+  }
+
+  .about .row .content {
+    margin-top: 1.9rem;
   }
 }
