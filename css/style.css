@@ -18,7 +18,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
   color: #fff;
-  min-height: 3000px;
+  min-height: 5000px;
 }
 
 /* Navbar */
@@ -145,19 +145,22 @@ body {
 
 /** About Section */
 .about,
-.menu {
+.menu,
+.contact {
   padding: 10rem 7% 1.4rem;
 }
 
 .about h2,
-.menu h2 {
+.menu h2,
+.contact h2 {
   margin-bottom: 3rem;
   text-align: center;
   font-size: 2.5rem;
 }
 
 .about h2 span,
-.menu h2 span {
+.menu h2 span,
+.contact h2 span {
   color: var(--primary);
 }
 
@@ -195,10 +198,12 @@ body {
 }
 
 /* Menu Section */
-.menu h2 {
+.menu h2,
+.contact h2 {
   margin-bottom: 1rem;
 }
-.menu p {
+.menu p,
+.contact p {
   text-align: center;
   margin: auto;
   max-width: 30rem;
@@ -226,6 +231,36 @@ body {
 
 .menu .row .menu-card .menu-card-title {
   margin: 1rem auto 0.5rem;
+}
+
+/*? Contact Section  */
+
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+  /* flex-wrap: wrap; */
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding-left: 2rem;
 }
 
 /* media Queries */
@@ -295,7 +330,6 @@ body {
 
   .menu p {
     font-size: 1.8rem;
-
   }
 }
 
@@ -308,6 +342,4 @@ body {
   .about .row .content {
     margin-top: 1.9rem;
   }
-
-  
 }
