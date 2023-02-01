@@ -215,6 +215,7 @@ body {
 
 .menu .row .menu-card {
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .menu .row .menu-card img {
@@ -228,7 +229,7 @@ body {
 
 /* media Queries */
 
-/* Laptop */
+/* *Laptop */
 @media (max-width: 1366px) {
   html {
     font-size: 60%;
