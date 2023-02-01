@@ -234,7 +234,7 @@ body {
     font-size: 60%;
   }
 }
-/* Tablet */
+/* *Tablet */
 @media (max-width: 886px) {
   html {
     font-size: 62.5%;
@@ -294,7 +294,7 @@ body {
 
 /* Mobile Phone */
 
-@media (max-width: 450px) {
+@media (max-width: 576px) {
   html {
     font-size: 55%;
     
@@ -302,6 +302,8 @@ body {
   .about .row .content {
     margin-top: 1.9rem;
   }
+
+  .hero 
 }
   
 
